@@ -31,7 +31,7 @@
 2. Open Termux.
 3. Copy and paste this command.
 ```
-curl -sL https://github.com/decipher3114/Revancify/raw/refs/heads/main/install.sh | bash
+curl -sL https://github.com/Adity1243/Revance/raw/refs/heads/main/install.sh | bash
 ```
 
 ## Usage
