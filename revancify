@@ -128,7 +128,7 @@ fetchSrc() {
 
     [ "$TAG" == "$VERSION" ] && return
 
-    echo "Revancify $TAG is available..."
+    echo "Revance $TAG is available..."
 
     echo "Installing..."
 
@@ -136,14 +136,14 @@ fetchSrc() {
     if [ -e "$TAG.zip" ]; then
         unzip -qo "$TAG.zip"
         rm -rf "$TAG.zip"
-        for CONTENT in Revancify-*/* Revancify-*/.*; do
+        for CONTENT in Revance-*/* Revance-*/.*; do
             rm -rf "${SRC:?}/$(basename "$CONTENT")"
             mv "$CONTENT" "$SRC/"
         done
-        rm -rf Revancify-* &> /dev/null
+        rm -rf Revance-* &> /dev/null
         cp -f "$SRC/revance" "$PREFIX/bin/revance"
         chmod +x "$PREFIX/bin/revance"
-        echo -e "Revance $TAG is now installed.\nRun 'revancify -h' for help."
+        echo -e "Revance $TAG is now installed.\nRun 'revance -h' for help."
         exit
     else
         echo -e "Unable to install Revancify $TAG !!\nPlease try again with proper Internet"
