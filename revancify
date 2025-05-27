@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 
-SRC="$HOME/Revancify"
+SRC="$HOME/Revance"
 
-HELP="revancify
+HELP="revance
 
-Usage: revancify [OPTION]
+Usage: revance [OPTION]
 
 Options:
 -f:  Force re-install Revancify
@@ -141,9 +141,9 @@ fetchSrc() {
             mv "$CONTENT" "$SRC/"
         done
         rm -rf Revancify-* &> /dev/null
-        cp -f "$SRC/revancify" "$PREFIX/bin/revancify"
-        chmod +x "$PREFIX/bin/revancify"
-        echo -e "Revancify $TAG is now installed.\nRun 'revancify -h' for help."
+        cp -f "$SRC/revance" "$PREFIX/bin/revance"
+        chmod +x "$PREFIX/bin/revance"
+        echo -e "Revance $TAG is now installed.\nRun 'revancify -h' for help."
         exit
     else
         echo -e "Unable to install Revancify $TAG !!\nPlease try again with proper Internet"
