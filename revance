@@ -141,8 +141,8 @@ fetchSrc() {
             mv "$CONTENT" "$SRC/"
         done
         rm -rf Revance-* &> /dev/null
-        cp -f "$SRC/revance" "$PREFIX/bin/revance"
-        chmod +x "$PREFIX/bin/revance"
+        cp -f "$SRC/revancify" "$PREFIX/bin/revancify"
+        chmod +x "$PREFIX/bin/revancify"
         echo -e "Revance $TAG is now installed.\nRun 'revance -h' for help."
         exit
     else
